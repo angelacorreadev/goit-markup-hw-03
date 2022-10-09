@@ -1,26 +1,42 @@
+:root{
+    /* Color principal - para logo y cambios de estados de enlaces y botones */
+    --brand-color: #2196f3;
+    /*Color principal - para textos y cambio de estado en .button-one*/
+    --main-text-color: #212121;
+    /*Color secundario - para h1 y texto de .address-two y .button-one*/
+    --secondary-text-color-one: #ffffff;
+    /*Color secundario - para textos de .address-one, .corporate-value-definition y .service-type*/
+    --secondary-text-color-two: #757575;
+    /*Color secundario - para backgrounds de footer y #banner*/
+    --secondary-background-color: #2f303A;
+    /*Color secundario- para texto de .button-two y background de #our-team*/
+    --secondary-color: #f5f4fa;
+
+}
+
 /* ETIQUETAS */
 body{
     /* Fuente dominante y hereditario Roboto (C7 y C9) - Fuentes alternativas TNR y SS (C8)*/
     font-family: 'Roboto', 'Times New Roman', 'sans-serif';
-    /* Color dominante #212121 (C10)*/
-    color:#212121;
+    /* Color dominante #212121 (C10), se declara con variable (C6)*/
+    color: var(--main-text-color);
 }
 
 footer{
-    background: #2F303A;
+    background: var(--secondary-background-color);
 }
 
 h1{
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
-    color:#ffffff;   
+    color: var(--secondary-text-color-one);   
 }
 
 h2{
     font-size: 36px;
-    line-height: 42.19px; 
+    line-height: 1.17; 
     text-align: center;
 }
 
@@ -32,104 +48,110 @@ button{
 .address-one{
     font-weight: 500;
     font-size: 14px;
-    line-height: 16.41px;
-    color:#757575;
+    line-height: 1.17;
+    color:var(--secondary-text-color-two);
     text-decoration: none;
 }
 
 .address-one:hover,
 .address-one:focus{
-    color: #2196f3
+    color: var(--brand-color);
 }
 
 .address-two{
     font-style:normal;
     font-size: 14px;
-    line-height: 24px;
-    color:#ffffff;
+    line-height: 1.71;
+    color:var(--secondary-text-color-one);
     text-decoration: none;
     }
 
 .address-two:focus,
 .address-two:hover{
-    color: #2196f3;
+    color: var(--brand-color);
 }
 
 .button-one{
     font-weight: 500;
     font-size: 14px;
-    line-height: 16.41px;
-    color:#ffffff; 
-    background: #2196f3;  
+    line-height: 1.17;
+    color:var(--secondary-text-color-one); 
+    background: var(--brand-color);  
+}
+
+.button-one:hover,
+.button-one:focus{
+    color: var(--main-text-color);
 }
     
 .button-two{
         font-weight: 500;
-        line-height: 26px;
-        background:#f5f4fa;
+        line-height: 1.62;
+        background:var(--secondary-color);
 }
 
 .button-two:hover,
 .button-two:focus{
-    color:#2196f3
+    color: var(--brand-color);
 }
 
 .corporate-value{
     font-weight: 700;
     font-size: 14px;
-    line-height: 16.41px;
+    line-height: 1.17;
 }
 
-.definition{
+.corporate-value-definition{
     font-size: 14px;
-    line-height: 24px;
-    color:#757575;  
+    line-height: 1.71px;
+    color:var(--secondary-text-color-two);  
 }
 
 .job-title{
-    line-height:18.75px
+    line-height:1.17
 }
 
 .logo{
     font-family: 'Raleway', 'Times New Roman', 'sans-serif';
     font-size: 26px;
-    line-height: 30.52px;
-    color:#2196f3;
+    line-height: 1.17;
+    color: var(--brand-color);
     text-decoration: none;
 }
 
-.navigator-item{
+.navigation-menu-item{
     font-weight: 500;
     font-size: 14px;
-    line-height: 16.41px;
+    line-height: 1.17;
+    list-style: none;
     text-decoration: none;   
-    color:#212121;  
+    color: var(--main-text-color);
 }
 
-.navigator-item:hover,
-.navigator-item:focus{
-    color: #2196f3}
+.navigation-menu-item:hover,
+.navigation-menu-item:focus{
+    color: var(--brand-color);}
 
 .project-name{
     font-size: 18px;
-    line-height:36px;
+    line-height:2;
 }
 
 .service-type{
-    line-height:30px;
-    color:#757575;
+    line-height:1.87;
+    color:var(--secondary-text-color-two);
 }
 
 .team-member{
     font-weight:500;
-    line-height:18.75px;
+    line-height:1.17;
 }
 
 /* ID */
 #banner{
-    background: #2F303A;
+    background:var(--secondary-background-color);
 }
 
 #our-team{
-    background: #f5f4fa;
+    background: var(--secondary-color);
 }
