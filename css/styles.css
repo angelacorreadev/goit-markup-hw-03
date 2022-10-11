@@ -1,3 +1,7 @@
+Criterio de aceptación B1
+*{
+    box-sizing: border-box;
+}
 :root{
     /* Color principal - para logo y cambios de estados de enlaces y botones */
     --brand-color: #2196f3;
@@ -16,14 +20,28 @@
 
 /* ETIQUETAS */
 body{
-    /* Fuente dominante y hereditario Roboto (C7 y C9) - Fuentes alternativas TNR y SS (C8)*/
     font-family: 'Roboto', 'Times New Roman', 'sans-serif';
-    /* Color dominante #212121 (C10), se declara con variable (C6)*/
     color: var(--main-text-color);
+}
+
+button{
+    cursor:pointer;
 }
 
 footer{
     background: var(--secondary-background-color);
+    width:1600px;
+    height:252px;
+}
+header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-right:219px;
+    padding-left: 215px;
+    
+    width:1600px;
+    height:80px;
 }
 
 h1{
@@ -31,18 +49,19 @@ h1{
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    color: var(--secondary-text-color-one);   
+    color: var(--secondary-text-color-one); 
+    
+    padding-top: 200px;
+    padding-right: 452px;
+    padding-bottom: 30px;
+    padding-left: 452px;
 }
 
 h2{
     font-size: 36px;
     line-height: 1.17; 
-    text-align: center;
 }
 
-button{
-    cursor:pointer;
-}
 
 /* CLASES */
 .address-one{
@@ -51,6 +70,9 @@ button{
     line-height: 1.17;
     color:var(--secondary-text-color-two);
     text-decoration: none;
+    list-style: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .address-one:hover,
@@ -77,6 +99,16 @@ button{
     line-height: 1.17;
     color:var(--secondary-text-color-one); 
     background: var(--brand-color);  
+
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+
+    margin-top:40px;
+    margin-right:669px;
+    margin-bottom: 200px;
+    margin-left:670px;
 }
 
 .button-one:hover,
@@ -88,11 +120,26 @@ button{
         font-weight: 500;
         line-height: 1.62;
         background:var(--secondary-color);
+        list-style: none;
+        display:inline-flex
 }
 
+.button-two>
 .button-two:hover,
 .button-two:focus{
     color: var(--brand-color);
+}
+
+.characteristic{
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    margin:5px;
+    padding:5px;
+}
+
+.container{
+    width:1200px;
 }
 
 .corporate-value{
@@ -103,8 +150,13 @@ button{
 
 .corporate-value-definition{
     font-size: 14px;
-    line-height: 1.71px;
-    color:var(--secondary-text-color-two);  
+    line-height: 1.71;
+    color:var(--secondary-text-color-two); 
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 .job-title{
@@ -119,6 +171,11 @@ button{
     text-decoration: none;
 }
 
+.navigation-menu{
+    list-style: none;
+    display: inline-flex;
+}
+
 .navigation-menu-item{
     font-weight: 500;
     font-size: 14px;
@@ -126,6 +183,9 @@ button{
     list-style: none;
     text-decoration: none;   
     color: var(--main-text-color);
+    padding-top: 32px;
+    padding-left:50px;
+    padding-bottom: 32px;
 }
 
 .navigation-menu-item:hover,
@@ -137,9 +197,19 @@ button{
     line-height:2;
 }
 
+.services{
+    display:inline-block;
+    width:30%;
+}
+
 .service-type{
     line-height:1.87;
     color:var(--secondary-text-color-two);
+}
+
+.team-card{
+    display:inline-block;
+    width: 20%;
 }
 
 .team-member{
@@ -150,8 +220,12 @@ button{
 /* ID */
 #banner{
     background:var(--secondary-background-color);
+    width:1600px;
+    height: 600px;
 }
 
 #our-team{
     background: var(--secondary-color);
+    width:1600px;
+    height: 648px;
 }
