@@ -1,7 +1,10 @@
 Criterio de aceptación B1
-*{
+*,
+*::before
+*::after{
     box-sizing: border-box;
-}
+} 
+
 :root{
     /* Color principal - para logo y cambios de estados de enlaces y botones */
     --brand-color: #2196f3;
@@ -25,18 +28,42 @@ body{
 }
 
 button{
+    border:0px;
+    padding-top: 6px;
+    padding-right: 24px;
+    padding-bottom:6px;
+    padding-left: 24px;
+    margin:8px;
     cursor:pointer;
+}
+
+button:hover,
+button:focus{
+    color:var(--brand-color)
 }
 
 footer{
     background: var(--secondary-background-color);
+    width:1600px;
+    height:252px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+    padding-left: 215px;
+    box-sizing: border-box;
 }
 
 header{
     display:flex;
     align-items:center;
     justify-content: space-between;
+    width: 1600px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     padding-left: 215px;
+    box-sizing: border-box;
 }
 
 h1{
@@ -55,13 +82,6 @@ h1{
 h2{
     font-size: 36px;
     line-height: 1.17; 
-    display:flex;
-    justify-content:center;
-}
-
-img{
-    max-width: 100%;
-    height: auto;
 }
 
 /* CLASES */
@@ -73,7 +93,13 @@ img{
     text-decoration: none;
     list-style: none;
     padding-top: 32px;
+    padding-right: 50px;
     padding-bottom: 32px;
+    justify-content: flex-end;
+}
+
+.address-one:last-child{
+    padding-right: 219px;
 }
 
 .address-one:hover,
@@ -92,6 +118,11 @@ img{
 .address-two:focus,
 .address-two:hover{
     color: var(--brand-color);
+}
+
+.banner{
+    background:var(--secondary-background-color);
+    width: 1600px;
 }
 
 .button-one{
@@ -120,23 +151,30 @@ img{
 .button-two{
         font-weight: 500;
         line-height: 1.62;
-        background:var(--secondary-color);
+        color:var(--secondary-color);
         list-style: none;
-        display:inline-flex
-}
-
-.button-two>
-.button-two:hover,
-.button-two:focus{
-    color: var(--brand-color);
+        display:flex;
+        justify-content:center;
 }
 
 .characteristic{
     display: inline-block;
     width: 20%;
     height: auto;
-    margin:5px;
-    padding:5px;
+}
+
+.characteristic-box{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width:1600px;
+    padding-top: 55px;
+    box-sizing: border-box; 
+    margin:30px; 
+}
+
+.characteristic-box:first-child{
+    padding-left: 215px;
 }
 
 .container{
@@ -155,9 +193,24 @@ img{
     color:var(--secondary-text-color-two); 
 }
 
+/*.corporate-value-definition:nth-child(2){
+    padding-right: 30px;
+    padding-bottom: 94px;
+    padding-left: 30px;
+}*/
+
 .images-box{
-    display: flex;
-    justify-content: center;
+    display: flex;    
+    justify-content: space-evenly;
+    width:1600px;
+    margin:30px;
+}
+
+.images-box:nth-child(2){
+    padding-top: 55.05px;
+    margin-right: 23.42px;
+    padding-bottom:94px;
+    margin-left:30.26px ;
 }
 
 .job-title{
@@ -193,6 +246,11 @@ img{
 .navigation-menu-item:focus{
     color: var(--brand-color);}
 
+.our-team{
+        background: var(--secondary-color);
+        width:1600px;
+    }
+
 .project-name{
     font-size: 18px;
     line-height:2;
@@ -201,6 +259,14 @@ img{
 .services{
     display:inline-block;
     width:30%;
+    border-bottom:1px;
+}
+
+.services-catalog{
+    width:1600px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:215px; 
 }
 
 .service-type{
@@ -211,6 +277,16 @@ img{
 .team-card{
     display:inline-block;
     width: 20%;
+    box-sizing: border-box;
+}
+
+.team-card-collection{
+    display:flex;
+    justify-content: center;
+    width: 1600px;
+    box-sizing: border-box;
+    padding-top:50px;
+    padding-bottom:94px;
 }
 
 .team-member{
@@ -219,10 +295,12 @@ img{
 }
 
 /* ID */
-#banner{
-    background:var(--secondary-background-color);
+#images-title{
+    padding-left:619.43px;
 }
 
-#our-team{
-    background: var(--secondary-color);
+#our-team-title{
+    padding-top: 94px;
+    padding-right: 668px;
+    padding-left: 669px;
 }

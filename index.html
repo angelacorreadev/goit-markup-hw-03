@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Se incluye el modern-normalize-->
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    
     <title>WebStudio</title>
   </head>
   
@@ -29,17 +31,17 @@
     </header>
     <main>
       <section>
-        <div id="banner">
+        <div class="banner">
           <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
         
           <button class="button-one"><b>Solicite nuestros servicios</b></button>
         </div>
       </section>
       
-      <div> <!--La etiqueta <b>...</b> por recomendación de buenas prácticas-->
+      <div class="characteristic-box"> <!--La etiqueta <b>...</b> por recomendación de buenas prácticas-->
           <article class="characteristic">
             <h3 class="corporate-value">ATENCIÓN A LOS DETALLES</h3>
-            <p class="corporate-value-definition"> Nos adentramos en todos los detalles
+            <p class="corporate-value-definition"> Nos adentramos en todos los detalles y
               procesos de su negocio, para así 
               desarrollar una solución a su medida.</p>
             </article>  
@@ -62,18 +64,20 @@
             <p class="corporate-value-definition">Usamos herramientas innovadoras para resolver las tareas asignadas. Es
               hora de simplificar los procesos laborales.</p>
             </article>
-          </div>
+      </div>
       
       <section>
-        <h2 class="images-box">A qué nos dedicamos</h2>
+        <h2 id="images-title">A qué nos dedicamos</h2>
+        <div class="images-box">
         <img src="images/flowdiagrami.jpg" alt="Diagrama de flujo" width="373">
         <img src="images/movileappii.jpg" alt="Aplicación movil" width="373">
         <img src="images/colortabletiii.jpg" alt="Paleta de colores en la tablet" width="373">
+        </div>
       </section>
 
-      <section id="our-team">
-        <h2>Nuestro Equipo</h2>
-        <div>
+      <section class="our-team">
+        <h2 id="our-team-title">Nuestro Equipo</h2>
+        <div class="team-card-collection">
           <div class="team-card">
             <img src="images/andrescuboi.jpg" alt="Foto de perfil de Andrés Cubo" width="270">
             <p class="team-member"><b>Andrés Cubo</b></p>
